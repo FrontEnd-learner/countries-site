@@ -10,6 +10,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="site-header-container container">
+            <a class="site-logo" href="index.html">Where in the world?</a>
+            <button class="site-dark-mode" type="button">Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <form class="form-fields" action="https://echo.htmlacademy.ru" method="get">
+                    <div class="form-field">
+                        <input class="form-field-search" type="search" name="search" placeholder="Search for a country…" aria-label="Search">
+                    </div>
+
+                    <div class="form-field">
+                        <select class="form-field-select" name="coutries">
+                            <option value="Africa">Africa</option>
+                            <option value="America">America</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Oceania">Oceania</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
