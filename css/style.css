@@ -1,4 +1,43 @@
 /* GLOBAL */
+
+/* FONTS */
+@font-face {
+    font-family: "Nunito Sans 7pt Condensed";
+    src: url("../fonts/NunitoSans7ptCondensed-SemiBold.woff2") format('woff2'),
+        url("../fonts/NunitoSans7ptCondensed-SemiBold.woff") format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt Condensed';
+    src: url("../fonts/NunitoSans7ptCondensed-Light.woff2") format('woff2'),
+        url("../fonts/NunitoSans7ptCondensed-Light.woff") format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito Sans 7pt Condensed";
+    src: url("../fonts/NunitoSans7ptCondensed-Regular.woff2") format('woff2'),
+        url("../fonts/NunitoSans7ptCondensed-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito Sans 7pt Condensed";
+    src: url("../fonts/NunitoSans7ptCondensed-ExtraBoldItalic.woff2") format('woff2'),
+        url("../fonts/NunitoSans7ptCondensed-ExtraBoldItalic.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
 html{
     box-sizing: border-box;
     height: 100%;
@@ -15,12 +54,18 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;               /*sticky footer qilish uchun*/
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Nunito Sans 7pt Condensed", "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background-color: #fff;
     color: #222;
 }
+
+.dark-mode{
+    background-color: #202C36;
+    color: #fff;
+}
+
 img{
     max-width: 100%;
     height: auto;
@@ -28,7 +73,7 @@ img{
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1140px;
+    max-width: 1320px;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: auto;
