@@ -4,40 +4,42 @@
 }
 /* FONTS */
 @font-face {
-    font-family: "Nunito Sans 7pt Condensed";
-    src: url("../fonts/NunitoSans7ptCondensed-SemiBold.woff2") format('woff2'),
-        url("../fonts/NunitoSans7ptCondensed-SemiBold.woff") format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito Sans 7pt Condensed';
-    src: url("../fonts/NunitoSans7ptCondensed-Light.woff2") format('woff2'),
-        url("../fonts/NunitoSans7ptCondensed-Light.woff") format('woff');
+    font-family: 'Nunito Sans 10pt';
+    src: url('../fonts/NunitoSans10pt-Light.woff2') format('woff2'),
+        url('../fonts/NunitoSans10pt-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Nunito Sans 7pt Condensed";
-    src: url("../fonts/NunitoSans7ptCondensed-Regular.woff2") format('woff2'),
-        url("../fonts/NunitoSans7ptCondensed-Regular.woff") format('woff');
+    font-family: 'Nunito Sans 10pt';
+    src: url('../fonts/NunitoSans10pt-Regular.woff2') format('woff2'),
+        url('../fonts/NunitoSans10pt-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Nunito Sans 7pt Condensed";
-    src: url("../fonts/NunitoSans7ptCondensed-ExtraBoldItalic.woff2") format('woff2'),
-        url("../fonts/NunitoSans7ptCondensed-ExtraBoldItalic.woff") format('woff');
+    font-family: 'Nunito Sans 10pt';
+    src: url('../fonts/NunitoSans10pt-SemiBold.woff2') format('woff2'),
+        url('../fonts/NunitoSans10pt-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt';
+    src: url('../fonts/NunitoSans10pt-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/NunitoSans10pt-ExtraBoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
+
+
 
 
 html{
@@ -156,4 +158,56 @@ img{
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0px 2px 9px 0px #0000000E;
+}
+
+/* COUNTRIES */
+.countries-list-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.countries-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.countries-list:not(:last-child){
+    margin-bottom: 75px;
+}
+.countries-item {
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.031);
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+.countries-item:hover{
+    transform: translateY(-20px);
+}
+.countries-img {
+    flex-shrink: 0;
+    width: 264px;
+    height: 160px;
+    object-fit: contain;
+}
+.countries-info {
+    padding: 24px 24px 46px;
+}
+.countries-info-heading {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+}
+.countries-info-text{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+}
+.countries-info-text:not(:last-child){
+    margin-bottom: 8px;
+}
+.bold-text {
+font-size: 14px;
+font-weight: 600;
+line-height: 16px;
 }
