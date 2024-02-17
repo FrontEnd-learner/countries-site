@@ -27,20 +27,19 @@
         <section class="hero">
             <div class="container">
                 <!-- FORM -->
-                <form class="form-fields" action="https://echo.htmlacademy.ru" method="get">
-                    <div class="form-field">
-                        <input class="form-field-search" type="search" name="search" placeholder="Search for a country…" aria-label="Search">
-                    </div>
+                <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+                    <input class="filters-search-input" type="search" name="search" placeholder="Search for a country…" aria-label="County name" required>
 
-                    <div class="form-field">
-                        <select class="form-field-select" name="coutries">
-                            <option value="Africa">Africa</option>
-                            <option value="America">America</option>
-                            <option value="Asia">Asia</option>
-                            <option value="Europe">Europe</option>
-                            <option value="Oceania">Oceania</option>
-                        </select>
-                    </div>
+                    <select class="filters-region-select" name="region" aria-label="Regions">
+                        <!-- mana shu kere edi selected and disabled -->
+                        <option selected disabled>Filter by Gegion</option>
+                        <option>Africa</option>
+                        <option>America</option>
+                        <option>Asia</option>
+                        <option>Europe</option>
+                        <option>Oceania</option>
+                    </select>
+
                 </form>
 
                 <!-- COUNTRIES -->
